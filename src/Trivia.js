@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { questions } from "./questions";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -8,6 +9,12 @@ import {
   VStack,
   Heading,
   useToast,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Stack,
+  HStack,
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 
@@ -17,15 +24,34 @@ const Trivia = () => {
     Array(questions.length).fill([])
   );
   const [showScore, setShowScore] = useState(false);
+  const [showAllQuestions, setShowAllQuestions] = useState(false);
   const toast = useToast(); // Initialize toast
+
+  // Load state from localStorage on initial render
+  useEffect(() => {
+    const storedCurrentQuestion = localStorage.getItem("currentQuestion");
+    const storedAnswers = localStorage.getItem("selectedAnswers");
+
+    if (storedCurrentQuestion !== null) {
+      setCurrentQuestion(parseInt(storedCurrentQuestion, 10));
+    }
+
+    if (storedAnswers) {
+      setSelectedAnswers(JSON.parse(storedAnswers));
+    }
+  }, []);
+
+  // Save current question and selected answers to localStorage
+  useEffect(() => {
+    localStorage.setItem("currentQuestion", currentQuestion);
+    localStorage.setItem("selectedAnswers", JSON.stringify(selectedAnswers));
+  }, [currentQuestion, selectedAnswers]);
 
   const handleAnswerSelect = (index) => {
     setSelectedAnswers((prev) => {
-      // Ensure prev[currentQuestion] is always an array (fallback to an empty array if undefined)
       const currentAnswers = [...(prev[currentQuestion] || [])];
       const answerLetter = String.fromCharCode(97 + index); // Convert index to letter (a, b, c, d)
-  
-      // Check for multiple selections
+
       if (currentAnswers.includes(answerLetter)) {
         return [
           ...prev.slice(0, currentQuestion),
@@ -33,14 +59,13 @@ const Trivia = () => {
           ...prev.slice(currentQuestion + 1),
         ];
       } else {
-        // If already selected one answer, show toast
         if (currentAnswers.length >= 1) {
           toast({
             description: "hey man one answer at a time, this is really silly of you",
             status: "warning",
             duration: 8000,
             isClosable: true,
-            position: "top-right", 
+            position: "top-right",
           });
         }
         return [
@@ -51,7 +76,6 @@ const Trivia = () => {
       }
     });
   };
-  
 
   const calculateScore = () => {
     let score = 0;
@@ -77,6 +101,37 @@ const Trivia = () => {
     }
   };
 
+  const handleQuestionSelect = (index) => {
+    setCurrentQuestion(index);
+  };
+
+  const restartQuiz = () => {
+    setCurrentQuestion(0);
+    setSelectedAnswers(Array(questions.length).fill([])); // Reset answers
+    setShowScore(false);
+    localStorage.clear(); // Clear localStorage when restarting
+  };
+
+  const toggleShowAllQuestions = () => {
+    setShowAllQuestions(!showAllQuestions);
+  };
+
+  // Pagination Logic
+  const itemsPerPage = 7;
+  const totalQuestions = questions.length;
+  const totalPages = Math.ceil(totalQuestions / itemsPerPage);
+
+  const getPaginationItems = () => {
+    let start = Math.max(0, currentQuestion - Math.floor(itemsPerPage / 2));
+    let end = Math.min(start + itemsPerPage, totalPages);
+
+    if (end - start < itemsPerPage) {
+      start = Math.max(0, end - itemsPerPage);
+    }
+
+    return Array.from({ length: end - start }, (_, i) => start + i);
+  };
+
   if (showScore) {
     const score = calculateScore();
     return (
@@ -94,15 +149,7 @@ const Trivia = () => {
           <Heading fontSize={{ base: "2xl", md: "3xl" }} mb={4}>
             Your Score: {score} / {questions.length}
           </Heading>
-          <Button
-            mt={5}
-            onClick={() => {
-              setCurrentQuestion(0);
-              setSelectedAnswers(Array(questions.length).fill([])); // Reset answers
-              setShowScore(false);
-            }}
-            colorScheme="blue"
-          >
+          <Button mt={5} onClick={restartQuiz} colorScheme="blue">
             Restart Quiz
           </Button>
         </Box>
@@ -152,6 +199,7 @@ const Trivia = () => {
             onClick={handlePreviousQuestion}
             disabled={currentQuestion === 0}
             colorScheme="gray"
+            variant="solid"
           >
             Previous
           </Button>
@@ -159,10 +207,70 @@ const Trivia = () => {
             onClick={handleNextQuestion}
             disabled={(selectedAnswers[currentQuestion] || []).length === 0}
             colorScheme="blue"
+            variant="solid"
           >
             {currentQuestion < questions.length - 1 ? "Next" : "Finish"}
           </Button>
         </Box>
+
+        {/* Pagination Navigation */}
+        <Box mt={8} display="flex" justifyContent="center" alignItems="center" gap={2}>
+          {getPaginationItems().map((pageIndex) => (
+            <Button
+              key={pageIndex}
+              onClick={() => handleQuestionSelect(pageIndex)}
+              isDisabled={(selectedAnswers[pageIndex] || []).length === 0} // Disable if question is not answered
+              colorScheme={currentQuestion === pageIndex ? "blue" : "gray"}
+              variant={currentQuestion === pageIndex ? "solid" : "outline"}
+              size="sm"
+              _hover={{
+                bg: currentQuestion === pageIndex ? "blue.600" : "gray.600",
+              }}
+            >
+              {pageIndex + 1}
+            </Button>
+          ))}
+        </Box>
+
+        {/* Show All Questions Button */}
+        <Box mt={4} textAlign="center">
+          <Button
+            onClick={toggleShowAllQuestions}
+            colorScheme="blue"
+            size="sm"
+            variant="outline"
+            _hover={{
+              bg: "blue.600",
+              color: "white",
+            }}
+          >
+            {showAllQuestions ? "bit dissapointing isnt it" : "Explore into the unknown!"}
+          </Button>
+        </Box>
+
+        {showAllQuestions && (
+  <Box mt={4} maxWidth="600px" mx="auto">
+    <HStack spacing={2} wrap="wrap"> {/* Use HStack for horizontal layout */}
+      {questions.map((question, index) => (
+        <Button
+          key={index}
+          onClick={() => handleQuestionSelect(index)}
+          isDisabled={(selectedAnswers[index] || []).length === 0} // Disable if question is not answered
+          colorScheme={currentQuestion === index ? "blue" : "gray"}
+          variant={currentQuestion === index ? "solid" : "outline"}
+          size="sm"
+          flex="1 0 100px" // Flex grow and basis to control the size of buttons
+          _hover={{
+            bg: currentQuestion === index ? "blue.600" : "gray.600",
+          }}
+        >
+          Question {index + 1}
+        </Button>
+      ))}
+    </HStack>
+  </Box>
+)}
+
       </Box>
     </>
   );

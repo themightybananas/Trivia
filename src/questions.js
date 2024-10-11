@@ -1,16 +1,6 @@
 export const questions = [
   {
-    question:  "1) in the sentence 'Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her' the word 'me' is: ",
-    options: [
-      "an adverb",
-      "a preposition",
-      "a predicative nominative",
-      "about to get lucky"
-    ],
-    correctAnswer: 'a'
-  },
-  {
-    question: "2) What is the capital of France?",
+    question: "1) What is the capital of France?",
     options: [
       "Helsinki",
       "Warsaw",
@@ -20,20 +10,30 @@ export const questions = [
     correctAnswer: 'c'
   },
   {
-    question:  "3) Which one of the following is correct according to pirate rules?",
+    question:  "2) Which one of the following is correct according to pirate rules?",
     options: [
       "never use sunscreen",
-      "say Arrgh using Larynx and Vocal Cords in order to vibrate yer vocal cords",
-      "wear a skull pirate hat",
+      "say Arrgh using Larynx and Vocal Cords in order to vibrate your vocal cords",
+      "wear a dope hat with skull on it",
       "stop fighting when the other person says 'ow'"
     ],
     correctAnswer: 'd'
   },
   {
+    question:  "3) the Universe is?",
+    options: [
+      "Collapsing",
+      "Expanding",
+      "Enormous",
+      "just need a little bit of vacation"
+    ],
+    correctAnswer: 'a'
+  },
+  {
     question:  "4) what is that on your face",
     options: [
       "a really small nostrils holes which i found rather anoyying",
-      "dangerous wanted person",
+      "dangerous wanted criminals",
       "an attractive young person",
       "out of shape can of beans"
     ],
@@ -110,16 +110,6 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "11) if the diameter of circle is 16 and the circle is intersected by line A in such a way as to form an arc of 8 inches between two points of intersection A and B, which interest line A at 90 degrees, does not intersect the circle, then nobody really give rat's ass, do they?",
-    options: [
-      "a rat does",
-      "i am",
-      "could you repeat the question please?",
-      "the first president of the united states"
-    ],
-    correctAnswer: 'd'
-  },
-  {
     question:  "12) <-- is this number thirteen?",
     options: [
       "no it is not",
@@ -130,7 +120,17 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "13) do you think i spell cardinal richelau correctly?",
+    question:  "13) if the diameter of circle is 16 and the circle is intersected by line A in such a way as to form an arc of 8 inches between two points of intersection A and B, which interest line A at 90 degrees, does not intersect the circle, then nobody really give rat's ass, do they?",
+    options: [
+      "a rat does",
+      "i am",
+      "could you repeat the question please?",
+      "the first president of the united states"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "14) do you think i spell cardinal richelau correctly?",
     options: [
       "no",
       "no",
@@ -140,7 +140,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "14) I AM REALLY SORRY FOR MY MISTAKE",
+    question:  "15) I AM REALLY SORRY FOR MY MISTAKE",
     options: [
       "sure",
       "sure",
@@ -150,12 +150,22 @@ export const questions = [
     correctAnswer: 'b'
   },
   {
-    question:  "15) Thank you for your kindness my good Sir!",
+    question:  "16) in the sentence 'Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her' the word 'me' is: ",
     options: [
-      "okay",
-      "o kay",
-      "ok ay",
-      "oka y"
+      "an adverb",
+      "a preposition",
+      "a predicative nominative",
+      "about to get lucky"
+    ],
+    correctAnswer: 'a'
+  },
+  {
+    question:  "17) in the sentence 'Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her' the word 'me' is: ",
+    options: [
+      "an adverb",
+      "a preposition",
+      "a predicative nominative",
+      "about to get lucky"
     ],
     correctAnswer: 'a'
   },
