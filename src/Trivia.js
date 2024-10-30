@@ -213,24 +213,6 @@ const Trivia = () => {
           </Button>
         </Box>
 
-        {/* Pagination Navigation */}
-        <Box mt={8} display="flex" justifyContent="center" alignItems="center" gap={2}>
-          {getPaginationItems().map((pageIndex) => (
-            <Button
-              key={pageIndex}
-              onClick={() => handleQuestionSelect(pageIndex)}
-              isDisabled={(selectedAnswers[pageIndex] || []).length === 0} // Disable if question is not answered
-              colorScheme={currentQuestion === pageIndex ? "blue" : "gray"}
-              variant={currentQuestion === pageIndex ? "solid" : "outline"}
-              size="sm"
-              _hover={{
-                bg: currentQuestion === pageIndex ? "blue.600" : "gray.600",
-              }}
-            >
-              {pageIndex + 1}
-            </Button>
-          ))}
-        </Box>
 
         {/* Show All Questions Button */}
         <Box mt={4} textAlign="center">
@@ -249,8 +231,8 @@ const Trivia = () => {
         </Box>
 
         {showAllQuestions && (
-  <Box mt={4} maxWidth="600px" mx="auto">
-    <HStack spacing={2} wrap="wrap"> {/* Use HStack for horizontal layout */}
+  <Box mt={4} maxWidth="500px" mx="auto">
+    <HStack spacing={2} wrap="wrap">
       {questions.map((question, index) => (
         <Button
           key={index}

@@ -13,7 +13,7 @@ export const questions = [
     question:  "2) Which one of the following is correct according to pirate rules?",
     options: [
       "never use sunscreen",
-      "say Arrgh using Larynx and Vocal Cords in order to vibrate your vocal cords",
+      "say Arrgh using Larynx and Vocal Cords in order to vibrate your corresponding organs",
       "wear a dope hat with skull on it",
       "stop fighting when the other person says 'ow'"
     ],
@@ -30,9 +30,9 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "4) what is that on your face",
+    question:  "4) what is that on your face ?",
     options: [
-      "a really small nostrils holes which i found rather anoyying",
+      "something that you cant see nor feel always keeping eyes on you, trust me, and sleep well tonight :)",
       "dangerous wanted criminals",
       "an attractive young person",
       "out of shape can of beans"
@@ -70,7 +70,7 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "8) do you find the repetitive questions too repetitive",
+    question:  "8) do you find the repetitive questions too repetitive?",
     options: [
       "yes",
       "",
@@ -80,7 +80,7 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "9) are you really sure that you find the repetitive questions too repetitive?",
+    question:  "9) are you really sure the repetitive questions seems too repetitive?",
     options: [
       "no",
       "",
@@ -160,13 +160,93 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "17) in the sentence 'Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her' the word 'me' is: ",
+    question:  "17) the writer of the question havent come up with the solution to solve world and hunger while managing to keep the question short and funny!",
     options: [
-      "an adverb",
-      "a preposition",
-      "a predicative nominative",
-      "about to get lucky"
+      "and what i should do about it?",
+      "oh dear, if only i can help you by staying on your side and taking care this poor wretched souls with glass of milks he wouldve been productive again",
+      "ive got no doubt that the writers is a handsome young fella, with an awkward smiles",
+      "the writer shouldnt make a silly question, that tooks hour to make if hes trying to solve world hunger"
     ],
     correctAnswer: 'a'
+  },
+  {
+    question:  "18) life is?",
+    options: [
+      "Miserable",
+      "Pain",
+      "A private label brand owned by Shoppers Drug Mart that sells health products like over-the-counter medications, vitamins, first aid, and oral care items.",
+      "quite cool around this week"
+    ],
+    correctAnswer: 'c'
+  },
+  {
+    question:  "19) if Marcus Lucinius Crassus knocking your door in the middle of the night you would???",
+    options: [
+      "shush him away",
+      "hes already dead like 2000 years ago?",
+      "shouts 'no ones home!'",
+      "are you really that curious since you put three question mark instead of one?"
+    ],
+    correctAnswer: 'c'
+  },
+  {
+    question:  "20) the answer to this question is?",
+    options: [
+      "right",
+      "technically wrong",
+      "im getting tired of this",
+      "find out yourself you lazy turd"
+    ],
+    correctAnswer: 'a'
+  },
+  {
+    question:  "21) the 'Little Ketchup' is? ",
+    options: [
+      "a food ingredient which abnormally small?",
+      "a humiliating nickname for a man",
+      "Brand's name",
+      "not small as it sound"
+    ],
+    correctAnswer: 'a'
+  },
+  {
+    question:  "22) bum bum bssh",
+    options: [
+      "dum dum tshhh",
+      "bum bum tshhh",
+      "tshhh tshhh bum",
+      "CUT THAT OUT ITS THREE IN THE MORNING"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "23) when confronted with charging spanish bulls, the immediate act is to:",
+    options: [
+      "pull out a magical red clothes to distract the bulls",
+      "climb up the nearest tree",
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "render him confused by rotating both of your arms 360 degrees repeatedly while shouting 'ich bin panzerkampfwagen!'"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "24) Sex? ",
+    options: [
+      "Male",
+      "Female",
+      "Epson-L120",
+      "no im not really feeling it today, im sorry honey"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "25) To avoid loses in the match between the leading chess grandmaster against so called Alpha male, the correct act is to :",
+    options: [
+      "'Accidently' Sneeze then proceed to 'accidently' knock over the chess board",
+      "Female",
+      "Epson-L120",
+      "no im not really feeling today, im sorry honey"
+    ],
+    correctAnswer: 'd'
   },
 ];
