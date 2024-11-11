@@ -240,12 +240,112 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "25) To avoid loses in the match between the leading chess grandmaster against so called Alpha male, the correct act is to :",
+    question:  "25) To avoid loses in a chess match to correct act is to :",
     options: [
-      "'Accidently' Sneeze then proceed to 'accidently' knock over the chess board",
-      "Female",
-      "Epson-L120",
-      "no im not really feeling today, im sorry honey"
+      "'Accidently' sneeze then proceed to 'accidently' knock over the chess board",
+      "RUN AWAY!",
+      "Tickles opponents so called genitalia for penis inspection",
+      "Tickles opponents so called poosay for poosay inspection"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "26) Doc alice told me to not hurt myself",
+    options: [
+      "Ha ha... ha haa ha?",
+      "I told you already Jared! chainsaw is not good for combing your hair!",
+      "Seek help instead of making silly jokes!",
+      "Serving Size 250ml/8.45 fl.oz"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "26) currently the writers are drinking milk, he is quite confused rather embazzled!, for the milk taste rather funky not in a fun way, but in a 'I am going to be sick' way",
+    options: [
+      "Milk taste so good yummy and yum yum",
+      "Food poisoning is not a joke",
+      "Yesterday my friend ask me if he can lick my toes for social experiment...i havent paint my toe nail that day so i refuse",
+      "Have an egg-extraordinary day"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "27) Human tears composed of :",
+    options: [
+      "salt",
+      "water",
+      "Realizing most of the problem doesnt come from external circumtances but rather their own repeated self-sabotage",
+      "antibodies"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "28) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
+    options: [
+      "immediately",
+      "immediately",
+      "immediately",
+      "immediately"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "29) This month Denji has suffered a death in the family, a breakup, and several other crises, Predict his remaining resistance before Denji completely losing it, when Luigi ask him: ",
+    options: [
+      "Hey you look sad, have you tried going for a jog?",
+      "Have you try Keto diet?",
+      "Have you try to smile?",
+      "HAVE YOU TRIED NOT BEING SAD"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "30)  A can of beans refers to a sealed metal container (can) that holds beans, which have usually been cooked and preserved. it isnt sentient it doesnt have conciousness nor feeling, but it also doesnt suffer from experiencing neither trauma, depression, anxiety, shame nor the feeling of emptiness which turn to be destructive leading to seeking validation through so called love from someone you just met. therefore would you rather live as:",
+    options: [
+      "A can of beans",
+      "A can of beans",
+      "A can of beans",
+      "A can of beans"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "31) Feeling not contributing anything to the society Aki started questioning his own existence, for dirt has more contribution by giving creature place to stand, grow and live. which one are better between them according to Aki?",
+    options: [
+      "",
+      "",
+      "",
+      "dirt"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "32) 'there are two me, which me is ME now?, one of them guides me, the other try to kill me, i dont have personality, i dont need personality,  _______________' Based on the sentence provided, fill the empty line:",
+    options: [
+      "'You make me who i am'",
+      ".",
+      ".",
+      "."
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "33) Denji was having a bad day which led him to treat his friend Aki poorly. However, Aki never told Denji that he was also having a rough day. Based on the information provided, Are Denji's emotions valid which led Denji to treat Aki poorly?, is the act justified only cause his valid emotion?",
+    options: [
+      "_",
+      "_",
+      "_",
+      "_"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "33) Denji was having a bad day which led him to treat his friend Aki poorly. However, Aki never told Denji that he was also having a rough day. Based on the information provided, Are Denji's emotions valid which led Denji to treat Aki poorly?, is the act justified only cause his valid emotion?",
+    options: [
+      "_",
+      "_",
+      "_",
+      "_"
     ],
     correctAnswer: 'd'
   },

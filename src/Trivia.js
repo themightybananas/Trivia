@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { questions } from "./questions";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
@@ -9,14 +9,12 @@ import {
   VStack,
   Heading,
   useToast,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Stack,
   HStack,
+  Wrap,
+  WrapItem, 
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
+import { gsap } from "gsap";
 
 const Trivia = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -25,7 +23,42 @@ const Trivia = () => {
   );
   const [showScore, setShowScore] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
-  const toast = useToast(); // Initialize toast
+  const toast = useToast();
+
+  // Refs for GSAP animations
+  const questionRef = useRef(null);
+  const optionsRef = useRef(null);
+
+  const animateQuestion = () => {
+    gsap.fromTo(
+      questionRef.current,
+      { opacity: 0, y: 40 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 0.7, 
+        ease: "power3.out" 
+      }
+    );
+
+    // Options animation
+    gsap.fromTo(
+      optionsRef.current.children,
+      { opacity: 0.1, x: -30 },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 0.5, 
+        stagger: 0.5, 
+        ease: "power3.out" 
+      }
+    );
+  };
+
+  // Trigger animation on question change
+  useEffect(() => {
+    animateQuestion();
+  }, [currentQuestion]);
 
   // Load state from localStorage on initial render
   useEffect(() => {
@@ -61,7 +94,8 @@ const Trivia = () => {
       } else {
         if (currentAnswers.length >= 1) {
           toast({
-            description: "hey man one answer at a time, this is really silly of you",
+            description:
+              "hey man one answer at a time, this is really silly of you",
             status: "warning",
             duration: 8000,
             isClosable: true,
@@ -113,27 +147,10 @@ const Trivia = () => {
   };
 
   const toggleShowAllQuestions = () => {
-    setShowAllQuestions(!showAllQuestions);
-  };
-
-  // Pagination Logic
-  const itemsPerPage = 7;
-  const totalQuestions = questions.length;
-  const totalPages = Math.ceil(totalQuestions / itemsPerPage);
-
-  const getPaginationItems = () => {
-    let start = Math.max(0, currentQuestion - Math.floor(itemsPerPage / 2));
-    let end = Math.min(start + itemsPerPage, totalPages);
-
-    if (end - start < itemsPerPage) {
-      start = Math.max(0, end - itemsPerPage);
-    }
-
-    return Array.from({ length: end - start }, (_, i) => start + i);
+    setShowAllQuestions (!showAllQuestions);
   };
 
   if (showScore) {
-    const score = calculateScore();
     return (
       <>
         <Global
@@ -146,8 +163,12 @@ const Trivia = () => {
           }}
         />
         <Box p={5} textAlign="center" marginTop="50px">
-          <Heading fontSize={{ base: "2xl", md: "3xl" }} mb={4}>
-            Your Score: {score} / {questions.length}
+          <Heading 
+            ref={questionRef}
+            fontSize={{ base: "2xl", md: "3xl" }} 
+            mb={4}
+          >
+            Your Score: {calculateScore()} / {questions.length}
           </Heading>
           <Button mt={5} onClick={restartQuiz} colorScheme="blue">
             Restart Quiz
@@ -169,10 +190,14 @@ const Trivia = () => {
         }}
       />
       <Box p={5} maxWidth="600px" mx="auto" marginTop="50px">
-        <Text fontSize={{ base: "lg", md: "xl" }} mb={4}>
+        <Text 
+          ref={questionRef}
+          fontSize={{ base: "lg", md: "xl" }} 
+          mb={4}
+        >
           {questions[currentQuestion].question}
         </Text>
-        <VStack spacing={4} align="start">
+        <VStack ref={optionsRef} spacing={4} align="start">
           {questions[currentQuestion].options.map((option, index) => (
             <Checkbox
               key={index}
@@ -183,76 +208,58 @@ const Trivia = () => {
               size="lg"
               colorScheme="blue"
               mr={5}
+              width="100%"
             >
               {option}
             </Checkbox>
           ))}
         </VStack>
-        <Box
-          mt={5}
-          display="flex"
-          justifyContent="space-between"
-          flexDirection={{ base: "column", md: "row" }}
-          gap={4}
-        >
-          <Button
-            onClick={handlePreviousQuestion}
-            disabled={currentQuestion === 0}
-            colorScheme="gray"
-            variant="solid"
+        <VStack spacing={4} mt={4} width="100%">
+          <HStack spacing={4} width="100%" justifyContent="space-between">
+            <Button 
+              onClick={handlePreviousQuestion} 
+              isDisabled={currentQuestion === 0}
+              flex={1}
+            >
+              Previous
+            </Button>
+            <Button 
+              onClick={handleNextQuestion}
+              flex={1}
+            >
+              {currentQuestion < questions.length - 1 ? "Next" : "Submit"}
+            </Button>
+          </HStack>
+          <Button 
+            onClick={toggleShowAllQuestions} 
+            colorScheme="teal" 
+            width="100%"
           >
-            Previous
+            {showAllQuestions ? "Hide All Questions" : "Show All Questions"}
           </Button>
-          <Button
-            onClick={handleNextQuestion}
-            disabled={(selectedAnswers[currentQuestion] || []).length === 0}
-            colorScheme="blue"
-            variant="solid"
-          >
-            {currentQuestion < questions.length - 1 ? "Next" : "Finish"}
-          </Button>
-        </Box>
-
-
-        {/* Show All Questions Button */}
-        <Box mt={4} textAlign="center">
-          <Button
-            onClick={toggleShowAllQuestions}
-            colorScheme="blue"
-            size="sm"
-            variant="outline"
-            _hover={{
-              bg: "blue.600",
-              color: "white",
-            }}
-          >
-            {showAllQuestions ? "bit dissapointing isnt it" : "Explore into the unknown!"}
-          </Button>
-        </Box>
-
+        </VStack>
         {showAllQuestions && (
-  <Box mt={4} maxWidth="500px" mx="auto">
-    <HStack spacing={2} wrap="wrap">
-      {questions.map((question, index) => (
-        <Button
-          key={index}
-          onClick={() => handleQuestionSelect(index)}
-          isDisabled={(selectedAnswers[index] || []).length === 0} // Disable if question is not answered
-          colorScheme={currentQuestion === index ? "blue" : "gray"}
-          variant={currentQuestion === index ? "solid" : "outline"}
-          size="sm"
-          flex="1 0 100px" // Flex grow and basis to control the size of buttons
-          _hover={{
-            bg: currentQuestion === index ? "blue.600" : "gray.600",
-          }}
-        >
-          Question {index + 1}
-        </Button>
-      ))}
-    </HStack>
-  </Box>
-)}
-
+          <Box mt={4} maxWidth="500px" mx="auto">
+            <Wrap spacing={2} justify="center">
+              {questions.map((question, index) => (
+                <WrapItem key={index}>
+                  <Button
+                    onClick={() => handleQuestionSelect(index)}
+                    colorScheme={currentQuestion === index ? "blue" : "gray"}
+                    variant={currentQuestion === index ? "solid" : "outline"}
+                    size="sm"
+                    width="100px"
+                    _hover={{
+                      bg: currentQuestion === index ? "blue.600" : "gray.600",
+                    }}
+                  >
+                    Question {index + 1}
+                  </Button>
+                </WrapItem>
+              ))}
+            </Wrap>
+          </Box>
+        )}
       </Box>
     </>
   );
