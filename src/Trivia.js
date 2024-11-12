@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { questions } from "./questions";
-import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
