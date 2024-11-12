@@ -10,12 +10,12 @@ export const questions = [
     correctAnswer: 'c'
   },
   {
-    question:  "2) Which one of the following is correct according to pirate rules?",
+    question:  "2) Which one of the following is correct according to the pirate rules?",
     options: [
       "never use sunscreen",
       "say Arrgh using Larynx and Vocal Cords in order to vibrate your corresponding organs",
       "wear a dope hat with skull on it",
-      "stop fighting when the other person says 'ow'"
+      "stop fighting when the other person says \"ow\""
     ],
     correctAnswer: 'd'
   },
@@ -32,10 +32,10 @@ export const questions = [
   {
     question:  "4) what is that on your face ?",
     options: [
-      "something that you cant see nor feel always keeping eyes on you, trust me, and sleep well tonight :)",
       "dangerous wanted criminals",
       "an attractive young person",
-      "out of shape can of beans"
+      "out of shape can of beans",
+      "something that you cant see nor feel always keeping eyes on you, trust me, and sleep well tonight :)"
     ],
     correctAnswer: 'b'
   },
@@ -150,7 +150,7 @@ export const questions = [
     correctAnswer: 'b'
   },
   {
-    question:  "16) in the sentence 'Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her' the word 'me' is: ",
+    question:  "16) in the sentence \"Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her\" the word \"me\" is: ",
     options: [
       "an adverb",
       "a preposition",
@@ -164,7 +164,7 @@ export const questions = [
     options: [
       "and what i should do about it?",
       "oh dear, if only i can help you by staying on your side and taking care this poor wretched souls with glass of milks he wouldve been productive again",
-      "ive got no doubt that the writers is a handsome young fella, with an awkward smiles",
+      "i mean yeah, you do you, man",
       "the writer shouldnt make a silly question, that tooks hour to make if hes trying to solve world hunger"
     ],
     correctAnswer: 'a'
@@ -184,7 +184,7 @@ export const questions = [
     options: [
       "shush him away",
       "hes already dead like 2000 years ago?",
-      "shouts 'no ones home!'",
+      "shouts \"no ones home!\"",
       "are you really that curious since you put three question mark instead of one?"
     ],
     correctAnswer: 'c'
@@ -242,7 +242,7 @@ export const questions = [
   {
     question:  "25) To avoid loses in a chess match to correct act is to :",
     options: [
-      "'Accidently' sneeze then proceed to 'accidently' knock over the chess board",
+      "\"accidently\" sneeze then proceed to \"accidently\" knock over the chess board",
       "RUN AWAY!",
       "Tickles opponents so called genitalia for penis inspection",
       "Tickles opponents so called poosay for poosay inspection"
@@ -260,7 +260,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "26) currently the writers are drinking milk, he is quite confused rather embazzled!, for the milk taste rather funky not in a fun way, but in a 'I am going to be sick' way",
+    question:  "27) currently the writers are drinking milk, he is quite confused rather embazzled!, for the milk taste rather funky not in a fun way, but in a \"I am going to be sick\" way",
     options: [
       "Milk taste so good yummy and yum yum",
       "Food poisoning is not a joke",
@@ -270,7 +270,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "27) Human tears composed of :",
+    question:  "28) Human tears composed of :",
     options: [
       "salt",
       "water",
@@ -280,7 +280,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "28) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
+    question:  "29) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
     options: [
       "immediately",
       "immediately",
@@ -290,17 +290,17 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "29) This month Denji has suffered a death in the family, a breakup, and several other crises, Predict his remaining resistance before Denji completely losing it, when Luigi ask him: ",
+    question:  "30) This month Denji has suffered a death in the family, a breakup, and several other crises, Predict his remaining resistance before Denji completely losing it, when Luigi ask him: ",
     options: [
-      "Hey you look sad, have you tried going for a jog?",
-      "Have you try Keto diet?",
-      "Have you try to smile?",
-      "HAVE YOU TRIED NOT BEING SAD"
+      "\"Hey you look sad, have you tried going for a jog ?\"",
+      "\"Have you try Keto diet ?\"",
+      "\"Have you try to smile ?\"",
+      "\"HAVE YOU TRIED NOT BEING SAD\""
     ],
     correctAnswer: 'd'
   },
   {
-    question:  "30)  A can of beans refers to a sealed metal container (can) that holds beans, which have usually been cooked and preserved. it isnt sentient it doesnt have conciousness nor feeling, but it also doesnt suffer from experiencing neither trauma, depression, anxiety, shame nor the feeling of emptiness which turn to be destructive leading to seeking validation through so called love from someone you just met. therefore would you rather live as:",
+    question:  "31)  A can of beans refers to a sealed metal container (can) that holds beans, which have usually been cooked and preserved. it isnt sentient it doesnt have conciousness nor feeling, but it also doesnt suffer from experiencing neither trauma, depression, anxiety, shame nor the feeling of emptiness which turn to be destructive leading to seeking validation through so called love from someone you just met. therefore would you rather live as:",
     options: [
       "A can of beans",
       "A can of beans",
@@ -310,7 +310,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "31) Feeling not contributing anything to the society Aki started questioning his own existence, for dirt has more contribution by giving creature place to stand, grow and live. which one are better between them according to Aki?",
+    question:  "32) Feeling not contributing anything to the society Aki started questioning his own existence, for dirt has more contribution by giving creature place to stand, grow and live. which one are better between them according to Aki?",
     options: [
       "",
       "",
@@ -320,32 +320,102 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "32) 'there are two me, which me is ME now?, one of them guides me, the other try to kill me, i dont have personality, i dont need personality,  _______________' Based on the sentence provided, fill the empty line:",
+    question:  "33) \"there are two me, which me is ME now?, one of them guides me, the other try to kill me, i dont have personality, i dont need personality,  _______________\" Based on the sentence provided, fill the empty line : ",
     options: [
-      "'You make me who i am'",
-      ".",
-      ".",
-      "."
+      "",
+      "",
+      "",
+      "\"You make me who i am ?\""
     ],
     correctAnswer: 'd'
   },
   {
-    question:  "33) Denji was having a bad day which led him to treat his friend Aki poorly. However, Aki never told Denji that he was also having a rough day. Based on the information provided, Are Denji's emotions valid which led Denji to treat Aki poorly?, is the act justified only cause his valid emotion?",
+    question:  "34) Denji was having a bad day which led him to treat his friend Aki poorly. However, Aki never told Denji that he was also having a rough day. Based on the information provided, Are Denji's emotions valid which led Denji treating Aki poorly?, is the act justified based on Denji's emotion?",
     options: [
-      "_",
-      "_",
-      "_",
-      "_"
+      "",
+      "",
+      "",
+      ""
     ],
     correctAnswer: 'd'
   },
   {
-    question:  "33) Denji was having a bad day which led him to treat his friend Aki poorly. However, Aki never told Denji that he was also having a rough day. Based on the information provided, Are Denji's emotions valid which led Denji to treat Aki poorly?, is the act justified only cause his valid emotion?",
+    question:  "35) I am",
     options: [
-      "_",
-      "_",
-      "_",
-      "_"
+      "the worst",
+      "the best",
+      "a loser",
+      "no one"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "36) Hahahahahahahahahahaha Hahahahahahahahahahaha Hahahahahahahahahahaha Hahahahahahahahahahaha ANYWAYY lets get back to the silly world again!, Who was Adam's Wife?",
+    options: [
+      "Eve",
+      "Hawa",
+      "A woman named Jessica from Brighton",
+      "the first girl i felt up in kindergarten"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "37) How long do you cook a three minutes eggs?",
+    options: [
+      "about 3 minutes?",
+      "180 seconds",
+      "1/20 hours",
+      "180,000 milliseconds."
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "38) What is the first letter of the uhhh...mmm \"Car\" i guess?",
+    options: [
+      "C",
+      "The letter that comes before D",
+      "The letter that comes after B",
+      "The letter are rejected, John is having a rough time :("
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "39) the writer has change his mind, if you answer the previous question with anything related to the letter \"C\" or \"John\", Then youre technically wrong cause why not",
+    options: [
+      "THATS UNFAIR",
+      "You flunked out of public school arent you !",
+      "Im getting tired of this",
+      "to be honest im not really that surprised"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "40) Select the sectence that you think best describes you :",
+    options: [
+      "I am decisive person, I make decisions right away",
+      "Ive decide right away, that i cant decide whether am i decisive or indecisive",
+      "Discord kitten",
+      "I have decide i shall go on to the next question"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "41) Dazzle my wazzle my dear? :",
+    options: [
+      "Yes please",
+      "No, Thank you",
+      "No it is not normal to have an inflammation in the anal area after intense penetration, it best to avoid \"experimenting\" using unverified source to conduct the \"experiment\" from the referenced YouTube video titled: \"SLEEPING PRANK GONE WRONG\"",
+      "Oh"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "42) --.- ..- . ... - .. --- -. ...",
+    options: [
+      "... . -.-. .-. . - / -- . ... ... .- --. .",
+      ".-- --- .-. -.. ...",
+      ".- -. ... .-- . .-.",
+      ">:("
     ],
     correctAnswer: 'd'
   },

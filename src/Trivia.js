@@ -30,26 +30,16 @@ const Trivia = () => {
   const optionsRef = useRef(null);
 
   const animateQuestion = () => {
-    gsap.fromTo(
-      questionRef.current,
-      { opacity: 0, y: 40 },
-      { 
-        opacity: 1, 
-        y: 0, 
-        duration: 0.7, 
-        ease: "power3.out" 
-      }
-    );
 
     // Options animation
     gsap.fromTo(
       optionsRef.current.children,
-      { opacity: 0.1, x: -30 },
+      { opacity: 0, x: -15 },
       { 
         opacity: 1, 
         x: 0, 
         duration: 0.5, 
-        stagger: 0.5, 
+        stagger: 1.5, 
         ease: "power3.out" 
       }
     );
