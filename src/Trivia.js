@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { questions } from "./questions";
+import soundtrack from './soundtrack.mp3';
 import {
   Box,
   Button,
@@ -10,7 +11,7 @@ import {
   useToast,
   HStack,
   Wrap,
-  WrapItem, 
+  WrapItem,
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 import { gsap } from "gsap";
@@ -22,32 +23,55 @@ const Trivia = () => {
   );
   const [showScore, setShowScore] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false); // State for soundtrack
   const toast = useToast();
 
-  // Refs for GSAP animations
+  // Refs for GSAP animations and soundtrack
   const questionRef = useRef(null);
   const optionsRef = useRef(null);
+  const audioRef = useRef(null);
 
+  // Animate question and options on question change
   const animateQuestion = () => {
-
-    // Options animation
     gsap.fromTo(
       optionsRef.current.children,
       { opacity: 0, x: -15 },
-      { 
-        opacity: 1, 
-        x: 0, 
-        duration: 0.5, 
-        stagger: 1.5, 
-        ease: "power3.out" 
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.5,
+        stagger: 1.5,
+        ease: "power3.out",
       }
     );
   };
 
-  // Trigger animation on question change
   useEffect(() => {
     animateQuestion();
   }, [currentQuestion]);
+
+  // Initialize soundtrack
+  useEffect(() => {
+    const audioElement = new Audio(soundtrack);
+    audioElement.loop = true; // Enable looping
+    audioRef.current = audioElement;
+
+    return () => {
+      if (audioElement) {
+        audioElement.pause(); // Stop audio playback
+        audioElement.src = ""; // Clear audio source
+      }
+    };
+  }, []);
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   // Load state from localStorage on initial render
   useEffect(() => {
@@ -77,14 +101,13 @@ const Trivia = () => {
       if (currentAnswers.includes(answerLetter)) {
         return [
           ...prev.slice(0, currentQuestion),
-          currentAnswers.filter((ans) => ans !== answerLetter), // Remove selected answer
+          currentAnswers.filter((ans) => ans !== answerLetter),
           ...prev.slice(currentQuestion + 1),
         ];
       } else {
         if (currentAnswers.length >= 1) {
           toast({
-            description:
-              "hey man one answer at a time, this is really silly of you",
+            description: "Hey, one answer at a time!",
             status: "warning",
             duration: 8000,
             isClosable: true,
@@ -93,7 +116,7 @@ const Trivia = () => {
         }
         return [
           ...prev.slice(0, currentQuestion),
-          [...currentAnswers, answerLetter], // Add selected answer
+          [...currentAnswers, answerLetter],
           ...prev.slice(currentQuestion + 1),
         ];
       }
@@ -136,7 +159,7 @@ const Trivia = () => {
   };
 
   const toggleShowAllQuestions = () => {
-    setShowAllQuestions (!showAllQuestions);
+    setShowAllQuestions(!showAllQuestions);
   };
 
   if (showScore) {
@@ -152,11 +175,7 @@ const Trivia = () => {
           }}
         />
         <Box p={5} textAlign="center" marginTop="50px">
-          <Heading 
-            ref={questionRef}
-            fontSize={{ base: "2xl", md: "3xl" }} 
-            mb={4}
-          >
+          <Heading ref={questionRef} fontSize={{ base: "2xl", md: "3xl" }} mb={4}>
             Your Score: {calculateScore()} / {questions.length}
           </Heading>
           <Button mt={5} onClick={restartQuiz} colorScheme="blue">
@@ -179,11 +198,10 @@ const Trivia = () => {
         }}
       />
       <Box p={5} maxWidth="600px" mx="auto" marginTop="50px">
-        <Text 
-          ref={questionRef}
-          fontSize={{ base: "lg", md: "xl" }} 
-          mb={4}
-        >
+        <Button onClick={handlePlayPause} colorScheme="teal" mb={4}>
+          {isPlaying ? "Pause Soundtrack" : "Play Soundtrack"}
+        </Button>
+        <Text ref={questionRef} fontSize={{ base: "lg", md: "xl" }} mb={4}>
           {questions[currentQuestion].question}
         </Text>
         <VStack ref={optionsRef} spacing={4} align="start">
@@ -205,25 +223,14 @@ const Trivia = () => {
         </VStack>
         <VStack spacing={4} mt={4} width="100%">
           <HStack spacing={4} width="100%" justifyContent="space-between">
-            <Button 
-              onClick={handlePreviousQuestion} 
-              isDisabled={currentQuestion === 0}
-              flex={1}
-            >
+            <Button onClick={handlePreviousQuestion} isDisabled={currentQuestion === 0} flex={1}>
               Previous
             </Button>
-            <Button 
-              onClick={handleNextQuestion}
-              flex={1}
-            >
+            <Button onClick={handleNextQuestion} flex={1}>
               {currentQuestion < questions.length - 1 ? "Next" : "Submit"}
             </Button>
           </HStack>
-          <Button 
-            onClick={toggleShowAllQuestions} 
-            colorScheme="teal" 
-            width="100%"
-          >
+          <Button onClick={toggleShowAllQuestions} colorScheme="teal" width="100%">
             {showAllQuestions ? "Hide All Questions" : "Show All Questions"}
           </Button>
         </VStack>

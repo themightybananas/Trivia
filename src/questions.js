@@ -10,12 +10,12 @@ export const questions = [
     correctAnswer: 'c'
   },
   {
-    question:  "2) Which one of the following is correct according to the pirate rules?",
+    question:  "2) Albert Einstein formulated his Theory of Relativity :",
     options: [
-      "never use sunscreen",
-      "say Arrgh using Larynx and Vocal Cords in order to vibrate your corresponding organs",
-      "wear a dope hat with skull on it",
-      "stop fighting when the other person says \"ow\""
+      "In Berlin",
+      "In Warsaw",
+      "In 1927",
+      "Because he couldnt get a date"
     ],
     correctAnswer: 'd'
   },
@@ -30,21 +30,21 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "4) what is that on your face ?",
+    question:  "4) in the sentence \"Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her\" the word \"me\" is: ",
     options: [
-      "dangerous wanted criminals",
-      "an attractive young person",
-      "out of shape can of beans",
-      "something that you cant see nor feel always keeping eyes on you, trust me, and sleep well tonight :)"
+      "an adverb",
+      "a preposition",
+      "a predicative nominative",
+      "about to get lucky"
     ],
-    correctAnswer: 'b'
+    correctAnswer: 'a'
   },
   {
     question:  "5) how many fingers am i holding up?",
     options: [
       "3",
       "three",
-      "tree",
+      "4-1",
       "hey shhh dont tell anyone but i think the answer is related to the numbers that comes after two"
     ],
     correctAnswer: 'd'
@@ -64,7 +64,7 @@ export const questions = [
     options: [
       "yes",
       "i do",
-      "i am",
+      "absolutely",
       "it is"
     ],
     correctAnswer: 'a'
@@ -73,19 +73,19 @@ export const questions = [
     question:  "8) do you find the repetitive questions too repetitive?",
     options: [
       "yes",
-      "",
-      "",
-      ""
+      "im sure of it",
+      "indeed",
+      "certainly"
     ],
     correctAnswer: 'a'
   },
   {
     question:  "9) are you really sure the repetitive questions seems too repetitive?",
     options: [
-      "no",
-      "",
-      "",
-      ""
+      "YES",
+      "DA",
+      "OUI",
+      "SI"
     ],
     correctAnswer: 'a'
   },
@@ -94,7 +94,7 @@ export const questions = [
     options: [
       "i hate you",
       "th",
-      "2.5 pounds of cheese",
+      "Nuts",
       "cardinal richelau"
     ],
     correctAnswer: 'a'
@@ -120,7 +120,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "13) if the diameter of circle is 16 and the circle is intersected by line A in such a way as to form an arc of 8 inches between two points of intersection A and B, which interest line A at 90 degrees, does not intersect the circle, then nobody really give rat's ass, do they?",
+    question:  "13) if the diameter of circle is 16 and the circle is intersected by line A in such a way as to form an arc of 8 inches between two points of intersection A and B, which interest line A at 90 degrees, does not intersect the circle, which equal to nobody really give rat's ass, do they?",
     options: [
       "a rat does",
       "i am",
@@ -130,7 +130,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "14) do you think i spell cardinal richelau correctly?",
+    question:  "14) do you think i spell Cardinal Richelau correctly?",
     options: [
       "no",
       "no",
@@ -140,7 +140,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "15) I AM REALLY SORRY FOR MY MISTAKE",
+    question:  "15) IM REALLY SORRY FOR MY MISTAKE",
     options: [
       "sure",
       "sure",
@@ -150,22 +150,22 @@ export const questions = [
     correctAnswer: 'b'
   },
   {
-    question:  "16) in the sentence \"Alexandra stripped of her rugged clothing and slid onto the pillows, her chest heaving with passion, her breath trembling through her wet and eagers lips then she asked me to join her\" the word \"me\" is: ",
+    question:  "16) what is that on your face ?",
     options: [
-      "an adverb",
-      "a preposition",
-      "a predicative nominative",
-      "about to get lucky"
+      "dangerous wanted criminals",
+      "an attractive young person",
+      "out of shape can of beans",
+      "something that you cant see nor feel always keeping eyes on you trust me, and sleep well tonight"
     ],
-    correctAnswer: 'a'
+    correctAnswer: 'b'
   },
   {
     question:  "17) the writer of the question havent come up with the solution to solve world and hunger while managing to keep the question short and funny!",
     options: [
       "and what i should do about it?",
-      "oh dear, if only i can help you by staying on your side and taking care this poor wretched souls with glass of milks he wouldve been productive again",
+      "okay",
       "i mean yeah, you do you, man",
-      "the writer shouldnt make a silly question, that tooks hour to make if hes trying to solve world hunger"
+      "life what is life"
     ],
     correctAnswer: 'a'
   },
@@ -185,7 +185,7 @@ export const questions = [
       "shush him away",
       "hes already dead like 2000 years ago?",
       "shouts \"no ones home!\"",
-      "are you really that curious since you put three question mark instead of one?"
+      "be scared"
     ],
     correctAnswer: 'c'
   },
@@ -194,13 +194,13 @@ export const questions = [
     options: [
       "right",
       "technically wrong",
-      "im getting tired of this",
-      "find out yourself you lazy turd"
+      "incorrect",
+      "im getting tired of this"
     ],
     correctAnswer: 'a'
   },
   {
-    question:  "21) the 'Little Ketchup' is? ",
+    question:  "21) the \"Little Ketchup\" is? ",
     options: [
       "a food ingredient which abnormally small?",
       "a humiliating nickname for a man",
@@ -215,14 +215,14 @@ export const questions = [
       "dum dum tshhh",
       "bum bum tshhh",
       "tshhh tshhh bum",
-      "CUT THAT OUT ITS THREE IN THE MORNING"
+      "drrr ickkk frrrm"
     ],
     correctAnswer: 'd'
   },
   {
     question:  "23) when confronted with charging spanish bulls, the immediate act is to:",
     options: [
-      "pull out a magical red clothes to distract the bulls",
+      "yield",
       "climb up the nearest tree",
       "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "render him confused by rotating both of your arms 360 degrees repeatedly while shouting 'ich bin panzerkampfwagen!'"
@@ -244,17 +244,17 @@ export const questions = [
     options: [
       "\"accidently\" sneeze then proceed to \"accidently\" knock over the chess board",
       "RUN AWAY!",
-      "Tickles opponents so called genitalia for penis inspection",
-      "Tickles opponents so called poosay for poosay inspection"
+      "disarmed opponent using tasergun ",
+      "be angry"
     ],
     correctAnswer: 'd'
   },
   {
-    question:  "26) Doc alice told me to not hurt myself",
+    question:  "26) Doc alice told me to not hurt myself, little did she know im a masochist",
     options: [
       "Ha ha... ha haa ha?",
       "I told you already Jared! chainsaw is not good for combing your hair!",
-      "Seek help instead of making silly jokes!",
+      "i feel molested by reading that question",
       "Serving Size 250ml/8.45 fl.oz"
     ],
     correctAnswer: 'd'
@@ -264,7 +264,7 @@ export const questions = [
     options: [
       "Milk taste so good yummy and yum yum",
       "Food poisoning is not a joke",
-      "Yesterday my friend ask me if he can lick my toes for social experiment...i havent paint my toe nail that day so i refuse",
+      "so is he confused or embazzled?",
       "Have an egg-extraordinary day"
     ],
     correctAnswer: 'd'
@@ -280,7 +280,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "29) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
+    question:  "29) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything, by always listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
     options: [
       "immediately",
       "immediately",
@@ -325,7 +325,7 @@ export const questions = [
       "",
       "",
       "",
-      "\"You make me who i am ?\""
+      "\"You make me who i am\""
     ],
     correctAnswer: 'd'
   },
@@ -350,7 +350,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "36) Hahahahahahahahahahaha Hahahahahahahahahahaha Hahahahahahahahahahaha Hahahahahahahahahahaha ANYWAYY lets get back to the silly world again!, Who was Adam's Wife?",
+    question:  "36) Who was Adam's Wife?",
     options: [
       "Eve",
       "Hawa",
@@ -370,7 +370,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "38) What is the first letter of the uhhh...mmm \"Car\" i guess?",
+    question:  "38) What is the first letter of \"Car\"",
     options: [
       "C",
       "The letter that comes before D",
@@ -383,7 +383,7 @@ export const questions = [
     question:  "39) the writer has change his mind, if you answer the previous question with anything related to the letter \"C\" or \"John\", Then youre technically wrong cause why not",
     options: [
       "THATS UNFAIR",
-      "You flunked out of public school arent you !",
+      "You flunked out of public school arent you!",
       "Im getting tired of this",
       "to be honest im not really that surprised"
     ],
@@ -416,6 +416,56 @@ export const questions = [
       ".-- --- .-. -.. ...",
       ".- -. ... .-- . .-.",
       ">:("
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "43) forty three",
+    options: [
+      "i mean yeah the numbers",
+      "never thought of that",
+      "mhmmm",
+      "no shit sherlock"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "44) what is the correct answer to question number 15?",
+    options: [
+      "sure",
+      "all of them",
+      "the next button",
+      "oh shut up"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "45) Cats like to eat :",
+    options: [
+      "fish",
+      "bigger fish",
+      "gigantic fish",
+      "unless theyre full"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  ": Who is the first Emperor of the Roman Empire (46",
+    options: [
+      "Augustus",
+      "January",
+      "March",
+      "Desember"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "47) Which canvas appeared on my backyard?",
+    options: [
+      "this",
+      "isnt it your backyard get burned down, in a freak soda accident couple weeks ago?",
+      "those",
+      "that"
     ],
     correctAnswer: 'd'
   },
