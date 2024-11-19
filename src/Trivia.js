@@ -96,7 +96,7 @@ const Trivia = () => {
   const handleAnswerSelect = (index) => {
     setSelectedAnswers((prev) => {
       const currentAnswers = [...(prev[currentQuestion] || [])];
-      const answerLetter = String.fromCharCode(97 + index); // Convert index to letter (a, b, c, d)
+      const answerLetter = String.fromCharCode(97 + index); 
 
       if (currentAnswers.includes(answerLetter)) {
         return [
@@ -107,7 +107,7 @@ const Trivia = () => {
       } else {
         if (currentAnswers.length >= 1) {
           toast({
-            description: "Hey, one answer at a time!",
+            description: "You greedy one arent you!",
             status: "warning",
             duration: 8000,
             isClosable: true,
@@ -197,9 +197,9 @@ const Trivia = () => {
           },
         }}
       />
-      <Box p={5} maxWidth="600px" mx="auto" marginTop="50px">
-        <Button onClick={handlePlayPause} colorScheme="teal" mb={4}>
-          {isPlaying ? "Pause Soundtrack" : "Play Soundtrack"}
+      <Box p={5} maxWidth="500px" mx="auto" marginTop="50px">
+        <Button onClick={handlePlayPause} colorScheme="red" mb={4}>
+          {isPlaying ? "Pause" : "Play"}
         </Button>
         <Text ref={questionRef} fontSize={{ base: "lg", md: "xl" }} mb={4}>
           {questions[currentQuestion].question}
@@ -241,9 +241,10 @@ const Trivia = () => {
                 <WrapItem key={index}>
                   <Button
                     onClick={() => handleQuestionSelect(index)}
-                    colorScheme={currentQuestion === index ? "blue" : "gray"}
+                    colorScheme={currentQuestion === index ? "teal" : "gray"}
                     variant={currentQuestion === index ? "solid" : "outline"}
                     size="sm"
+                    color="gray.400"
                     width="100px"
                     _hover={{
                       bg: currentQuestion === index ? "blue.600" : "gray.600",

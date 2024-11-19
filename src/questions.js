@@ -44,7 +44,7 @@ export const questions = [
     options: [
       "3",
       "three",
-      "4-1",
+      "about 3?",
       "hey shhh dont tell anyone but i think the answer is related to the numbers that comes after two"
     ],
     correctAnswer: 'd'
@@ -466,6 +466,46 @@ export const questions = [
       "isnt it your backyard get burned down, in a freak soda accident couple weeks ago?",
       "those",
       "that"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "47) Which canvas appeared on my backyard?",
+    options: [
+      "this one",
+      "that one",
+      "on your left",
+      "isnt it your backyard get burned down, in a freak soda accident couple weeks ago?"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "48) \"ive had worst\" said Jared as his friend told a story about his mutilated pets.",
+    options: [
+      "woah",
+      "ive had worst actually",
+      "FUCK YOU JARED!",
+      "Jared used to pull my pants in highscool"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "49) The golden age of the Holy Roman Empire was during the reign of?",
+    options: [
+      "Charlegmane",
+      "Lana Del Ray",
+      "Frederick I-II",
+      "Muawiyah"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "50) 4 is?",
+    options: [
+      "the average organ of four eyed dwarfs",
+      "quite a lot for human reproductive organ on a single person",
+      "the result of brutal savagery of pillow fighting, which are attended by 20 young college student resulting in 16 deads, 4 injured",
+      "oh, about 11 sir"
     ],
     correctAnswer: 'd'
   },
