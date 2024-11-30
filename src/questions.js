@@ -10,7 +10,7 @@ export const questions = [
     correctAnswer: 'c'
   },
   {
-    question:  "2) Albert Einstein formulated his Theory of Relativity :",
+    question:  "2) Albert Einstein formulated his Theory of Relativity:",
     options: [
       "In Berlin",
       "In Warsaw",
@@ -45,7 +45,7 @@ export const questions = [
       "3",
       "three",
       "about 3?",
-      "hey shhh dont tell anyone but i think the answer is related to the numbers that comes after two"
+      "shhhh dont tell anyone but i think the answer is two"
     ],
     correctAnswer: 'd'
   },
@@ -90,7 +90,7 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "10) well me, personally! i dont really think you find the repetitive questions too repetitive",
+    question:  "10) well me, personally! i dont think you find the repetitive questions too repetitive",
     options: [
       "i hate you",
       "th",
@@ -185,7 +185,7 @@ export const questions = [
       "shush him away",
       "hes already dead like 2000 years ago?",
       "shouts \"no ones home!\"",
-      "be scared"
+      "convince him that invading the Parthia is not a good idea"
     ],
     correctAnswer: 'c'
   },
@@ -202,7 +202,7 @@ export const questions = [
   {
     question:  "21) the \"Little Ketchup\" is? ",
     options: [
-      "a food ingredient which abnormally small?",
+      "an ingredient which abnormally small?",
       "a humiliating nickname for a man",
       "Brand's name",
       "not small as it sound"
@@ -225,7 +225,7 @@ export const questions = [
       "yield",
       "climb up the nearest tree",
       "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "render him confused by rotating both of your arms 360 degrees repeatedly while shouting 'ich bin panzerkampfwagen!'"
+      "render him confused by rotating both of your arms 360 degrees repeatedly while shouting \"ich bin panzerkampfwagen!\""
     ],
     correctAnswer: 'd'
   },
@@ -244,7 +244,7 @@ export const questions = [
     options: [
       "\"accidently\" sneeze then proceed to \"accidently\" knock over the chess board",
       "RUN AWAY!",
-      "disarmed opponent using tasergun ",
+      "accept the defeat and be a loser, like youre, yeah you disgusting scum",
       "be angry"
     ],
     correctAnswer: 'd'
@@ -254,18 +254,18 @@ export const questions = [
     options: [
       "Ha ha... ha haa ha?",
       "I told you already Jared! chainsaw is not good for combing your hair!",
-      "i feel molested by reading that question",
+      "i feel harmed by the fact you know my deepest secret",
       "Serving Size 250ml/8.45 fl.oz"
     ],
     correctAnswer: 'd'
   },
   {
-    question:  "27) currently the writers are drinking milk, he is quite confused rather embazzled!, for the milk taste rather funky not in a fun way, but in a \"I am going to be sick\" way",
+    question:  "27) once a pon time ze writer haz drinkk zen drank, hee is quite confused radzher embazzled!, for ze milk tasze radzher funky nOt in a fun way, but in a \"I am going to be sick\" way",
     options: [
       "Milk taste so good yummy and yum yum",
-      "Food poisoning is not a joke",
+      "mynd y0u m00se bit3 kan be nasti",
       "so is he confused or embazzled?",
-      "Have an egg-extraordinary day"
+      "i zink ze milk haz gotten int0 my blod strim"
     ],
     correctAnswer: 'd'
   },
@@ -470,7 +470,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "47) Which canvas appeared on my backyard?",
+    question:  "48) Which canvas appeared on my backyard?",
     options: [
       "this one",
       "that one",
@@ -480,7 +480,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "48) \"ive had worst\" said Jared as his friend told a story about his mutilated pets.",
+    question:  "49) \"ive had worst\" said Jared as his friend told a story about his mutilated pets.",
     options: [
       "woah",
       "ive had worst actually",
@@ -490,7 +490,7 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "49) The golden age of the Holy Roman Empire was during the reign of?",
+    question:  "50) The golden age of the Holy Roman Empire was during the reign of?",
     options: [
       "Charlegmane",
       "Lana Del Ray",
@@ -500,12 +500,52 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "50) 4 is?",
+    question:  "51) 4 is?",
     options: [
-      "the average organ of four eyed dwarfs",
+      "the average eyes organ for four eyed dwarfs",
       "quite a lot for human reproductive organ on a single person",
-      "the result of brutal savagery of pillow fighting, which are attended by 20 young college student resulting in 16 deads, 4 injured",
+      "Has an inexplicable craving to condition her hair with motor oil each morning",
       "oh, about 11 sir"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "52) Doctor Bunggle Berry forgot to patent his laser veggie-dicer doomsday device and lost millions!",
+    options: [
+      "yikes",
+      "why would a doctor invent such a thing?",
+      "Bunggle Berry?",
+      "epson-l120"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "53) Helena Cheng once tried to start a cat-themed secret society, but people only said, \"Meow!\"",
+    options: [
+      "Meow (English)",
+      "Meow (France)",
+      "Meow (Spain)",
+      "Meow (Cat)"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "54) Jona Kjellberg hates being out in the sun and has been known to give some killer hickies every once in a while, is Jona Kjellberg a:",
+    options: [
+      "VAMPIRE",
+      "freaky introverted man",
+      "Man",
+      "mississippiensis"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "55) Colonel Grunt secretly blames Jon for stealing his first love, an action figure named Missy McBoom.",
+    options: [
+      "FUCK YOU JON",
+      "Colonel you say?",
+      "i beg your pardon",
+      "You did flunked out of public school!"
     ],
     correctAnswer: 'd'
   },
