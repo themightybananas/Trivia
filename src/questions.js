@@ -45,7 +45,7 @@ export const questions = [
       "3",
       "three",
       "about 3?",
-      "shhhh dont tell anyone but i think the answer is two"
+      "shhhh dont tell anyone but i think the answer is three"
     ],
     correctAnswer: 'd'
   },
@@ -185,7 +185,7 @@ export const questions = [
       "shush him away",
       "hes already dead like 2000 years ago?",
       "shouts \"no ones home!\"",
-      "convince him that invading the Parthia is not a good idea"
+      "convince him that invading Parthia is not a good idea"
     ],
     correctAnswer: 'c'
   },
@@ -473,7 +473,7 @@ export const questions = [
     question:  "48) Which canvas appeared on my backyard?",
     options: [
       "this one",
-      "that one",
+      "something a bit off",
       "on your left",
       "isnt it your backyard get burned down, in a freak soda accident couple weeks ago?"
     ],
@@ -495,7 +495,7 @@ export const questions = [
       "Charlegmane",
       "Lana Del Ray",
       "Frederick I-II",
-      "Muawiyah"
+      "Ogedei Khan"
     ],
     correctAnswer: 'd'
   },
@@ -515,7 +515,7 @@ export const questions = [
       "yikes",
       "why would a doctor invent such a thing?",
       "Bunggle Berry?",
-      "epson-l120"
+      "Epson-L120"
     ],
     correctAnswer: 'd'
   },
@@ -542,10 +542,10 @@ export const questions = [
   {
     question:  "55) Colonel Grunt secretly blames Jon for stealing his first love, an action figure named Missy McBoom.",
     options: [
-      "FUCK YOU JON",
+      "FUCK YOU JON!",
       "Colonel you say?",
       "i beg your pardon",
-      "You did flunked out of public school!"
+      "this is not even a question"
     ],
     correctAnswer: 'd'
   },
