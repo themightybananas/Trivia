@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { questions } from "./questions";
 import soundtrack from './soundtrack.mp3';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import {
   Box,
   Button,
@@ -198,9 +200,9 @@ const Trivia = () => {
         }}
       />
       <Box p={5} maxWidth="500px" mx="auto" marginTop="50px">
-        <Button onClick={handlePlayPause} colorScheme="red" mb={4}>
-          {isPlaying ? "Pause" : "Play"}
-        </Button>
+      <Button onClick={handlePlayPause} colorScheme="red" mb={4}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+      </Button>
         <Text ref={questionRef} fontSize={{ base: "lg", md: "xl" }} mb={4}>
           {questions[currentQuestion].question}
         </Text>

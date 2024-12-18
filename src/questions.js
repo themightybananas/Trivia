@@ -472,9 +472,9 @@ export const questions = [
   {
     question:  "48) Which canvas appeared on my backyard?",
     options: [
-      "this one",
+      "this",
       "something a bit off",
-      "on your left",
+      "those",
       "isnt it your backyard get burned down, in a freak soda accident couple weeks ago?"
     ],
     correctAnswer: 'd'
@@ -546,6 +546,46 @@ export const questions = [
       "Colonel you say?",
       "i beg your pardon",
       "this is not even a question"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "56) Would you ran away from your house to join traveling acrobats?",
+    options: [
+      "no, ive got homeworks to do",
+      "ill consider that",
+      "thats none of your business",
+      "shut up with your far left liberal nonsense John!"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "57) what type?",
+    options: [
+      "the one that fit snugly",
+      "designed to lift, hold and separate",
+      "boneless",
+      "Attractive, young and cupcake as the desert"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "58) are they really that good?",
+    options: [
+      "not really, theyre just a bunch of overhyped, overrated, over everything",
+      "yes it was quite a delicacy",
+      "i wont tell you, its quite private",
+      "7/10 couldve done it in tuesday"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "59) hi",
+    options: [
+      "hi",
+      "sup",
+      "no im not into butt stuff sorry",
+      "i ummmm cant speak spanish i uhhhh no hablo ingles, no hablo espanol, not even one hablo sir!"
     ],
     correctAnswer: 'd'
   },
