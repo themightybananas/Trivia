@@ -14,6 +14,13 @@ import {
   HStack,
   Wrap,
   WrapItem,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 import { gsap } from "gsap";
@@ -26,6 +33,8 @@ const Trivia = () => {
   const [showScore, setShowScore] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false); // State for soundtrack
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isAgreed, setIsAgreed] = useState(false);
   const toast = useToast();
 
   // Refs for GSAP animations and soundtrack
@@ -94,6 +103,15 @@ const Trivia = () => {
     localStorage.setItem("currentQuestion", currentQuestion);
     localStorage.setItem("selectedAnswers", JSON.stringify(selectedAnswers));
   }, [currentQuestion, selectedAnswers]);
+
+  useEffect(() => {
+    onOpen();
+  }, [onOpen]);
+
+  const handleAgree = () => {
+    setIsAgreed(true);
+    onClose();
+  };
 
   const handleAnswerSelect = (index) => {
     setSelectedAnswers((prev) => {
@@ -199,6 +217,122 @@ const Trivia = () => {
           },
         }}
       />
+      <Modal isOpen={isOpen} onClose={onClose} isCentered>
+        <ModalOverlay />
+        <ModalContent bg="black" color="white">
+          <ModalHeader>Terms and Agreement</ModalHeader>
+          <ModalBody>
+            <Text fontSize="lg" mb={4}>
+              Please read and agree to the terms and conditions before starting the quiz.
+            </Text>
+            <Text fontSize="md" mb={2}>
+              <strong>Terms and Agreement for Participation in Evil.inc Trivia</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>Effective Date:</strong> [this day]
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              Welcome to <strong>Evil.inc Trivia</strong> the (“Website”), made by so called "we" or as known as "themigthybananas" repository, where knowledge meets nonsense, and penis inspection ensues! By participating in our trivia quizzes, you agree to the following terms and conditions. Please read them carefully cause i say so.
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>1. Agreement to Participate Seriously</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              By accessing and using Evil.inc Trivia, you agree to:
+              <ul>
+                <li>Answer all questions with genuine effort and honesty, no matter how absurd they may seem.</li>
+                <li>Avoid cheating, Googling, or telepathically contacting a trivia expert during the quiz (we know how tempting it is).</li>
+              </ul>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>2. Purpose of the Website</strong>
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              Evil.inc Trivia exists for something and such a things!.
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>3. Eligibility</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              Participants must:
+              <ul>
+                <li>Be of sufficient age to understand the humor in a question like, “What’s the airspeed velocity of an unladen swallow?”</li>
+                <li>Have a sense of humor. since its the bare minimum</li>
+                <li>Have the required corresponding limbs and organs (such as fingers, eyes and etc) to answer using their device</li>
+              </ul>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>4. Conduct of the Participant</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              When using Evil.inc, you agree to:
+              <ul>
+                <li>Take our quizzes in good faith.</li>
+                <li>Not hold Evil.inc accountable for existential crises triggered by questions like, “What came first: the chicken or Joe Biden?”</li>
+                <li>Respect our quirky trivia and not attempt to rewrite reality using intergalactic super powers.</li>
+              </ul>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>5. Accuracy of Responses</strong>
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              Evil.inc makes no guarantees about the accuracy or relevance of our trivia questions—or your answers. If a question about “how many jellybeans fit in the Eiffel Tower” causes confusion, that’s entirely the point.
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>6. Data Collection and Privacy</strong>
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              Evil.inc will and gladly collect your leaked data BUT, we promise not to sell your favorite trivia answer to the highest bidder as a gesture of respecting your privacy.
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>7. No Lawsuits, Please</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              By using this website, you agree not to sue Evil.inc for:
+              <ul>
+                <li>Being too silly.</li>
+                <li>being too cool</li>
+                <li>the really specific address that are totally a "joke"</li>
+              </ul>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>8. Termination of Fun</strong>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              Evil.inc reserves the right to terminate your access to the website if you:
+              <ul>
+                <li>Take our questions too seriously (ironic, we know).</li>
+                <li>Engage in behavior that disrupts the trivia experience for others, such as throwing a molotov at random pedestrian at 9 AM on a sunny Tuesday.</li>
+              </ul>
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>9. Updates to These Terms</strong>
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              Evil.inc may update these terms from time to time. maybe tomorrow or even yesterday!
+            </Text>
+            <Text fontSize="sm" mb={2}>
+              <strong>10. Acceptance of Terms</strong>
+            </Text>
+            <Text fontSize="sm" mb={4}>
+              By participating in Evil.inc Trivia, you agree to these terms and conditions. If you do not agree, it means youre not awesome sauce.
+            </Text>
+            <Checkbox
+              mt={4}
+              isChecked={isAgreed}
+              onChange={(e) => setIsAgreed(e.target.checked)}
+              size="lg"
+            >
+              I agree to the terms and conditions
+            </Checkbox>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" onClick={handleAgree} isDisabled={!isAgreed}>
+              Agree
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
       <Box p={5} maxWidth="500px" mx="auto" marginTop="50px">
       <Button onClick={handlePlayPause} colorScheme="red" mb={4}>
         <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
