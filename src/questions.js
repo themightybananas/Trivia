@@ -15,7 +15,7 @@ export const questions = [
       "In Berlin",
       "In Warsaw",
       "In 1927",
-      "Because he couldnt get a date"
+      "In 1905"
     ],
     correctAnswer: 'd'
   },
@@ -25,7 +25,7 @@ export const questions = [
       "Collapsing",
       "Expanding",
       "Enormous",
-      "just need a little bit of vacation"
+      "Big"
     ],
     correctAnswer: 'a'
   },
@@ -45,7 +45,7 @@ export const questions = [
       "3",
       "three",
       "about 3?",
-      "shhhh dont tell anyone but i think the answer is three"
+      "3%"
     ],
     correctAnswer: 'd'
   },
@@ -82,10 +82,10 @@ export const questions = [
   {
     question:  "9) are you really sure the repetitive questions seems too repetitive?",
     options: [
-      "YES",
-      "DA",
-      "OUI",
-      "SI"
+      "",
+      "yes",
+      "",
+      ""
     ],
     correctAnswer: 'a'
   },
@@ -94,7 +94,7 @@ export const questions = [
     options: [
       "i hate you",
       "th",
-      "Nuts",
+      "yes",
       "cardinal richelau"
     ],
     correctAnswer: 'a'
@@ -153,7 +153,7 @@ export const questions = [
     question:  "16) what is that on your face ?",
     options: [
       "dangerous wanted criminals",
-      "an attractive young person",
+      "an attractive person",
       "out of shape can of beans",
       "something that you cant see nor feel always keeping eyes on you trust me, and sleep well tonight"
     ],
@@ -162,9 +162,9 @@ export const questions = [
   {
     question:  "17) the writer of the question havent come up with the solution to solve world and hunger while managing to keep the question short and funny!",
     options: [
-      "and what i should do about it?",
+      "yeah",
       "okay",
-      "i mean yeah, you do you, man",
+      "i mean yeah you do you, man",
       "life what is life"
     ],
     correctAnswer: 'a'
@@ -185,7 +185,7 @@ export const questions = [
       "shush him away",
       "hes already dead like 2000 years ago?",
       "shouts \"no ones home!\"",
-      "convince him that invading Parthia is not a good idea"
+      "convince him to invest in cryptocurrency"
     ],
     correctAnswer: 'c'
   },
@@ -195,7 +195,7 @@ export const questions = [
       "right",
       "technically wrong",
       "incorrect",
-      "im getting tired of this"
+      "intersting"
     ],
     correctAnswer: 'a'
   },
@@ -234,8 +234,8 @@ export const questions = [
     options: [
       "Male",
       "Female",
-      "Epson-L120",
-      "no im not really feeling it today, im sorry honey"
+      "no im not really feeling it today, im sorry honey",
+      "Epson-L120"
     ],
     correctAnswer: 'd'
   },
@@ -244,7 +244,7 @@ export const questions = [
     options: [
       "\"accidently\" sneeze then proceed to \"accidently\" knock over the chess board",
       "RUN AWAY!",
-      "accept the defeat and be a loser, like youre, yeah you disgusting scum",
+      "accept the defeat and be a loser like youre, yeah you disgusting scum",
       "be angry"
     ],
     correctAnswer: 'd'
@@ -260,12 +260,12 @@ export const questions = [
     correctAnswer: 'd'
   },
   {
-    question:  "27) once a pon time ze writer haz drinkk zen drank, hee is quite confused radzher embazzled!, for ze milk tasze radzher funky nOt in a fun way, but in a \"I am going to be sick\" way",
+    question:  "27) and then i say where my spleen at!",
     options: [
-      "Milk taste so good yummy and yum yum",
-      "mynd y0u m00se bit3 kan be nasti",
-      "so is he confused or embazzled?",
-      "i zink ze milk haz gotten int0 my blod strim"
+      "Hahaha thats my funny man",
+      "mynd yu moose bite kan be nasti",
+      "Bryan we are getting a divorce",
+      "under the liver"
     ],
     correctAnswer: 'd'
   },
@@ -275,7 +275,7 @@ export const questions = [
       "salt",
       "water",
       "Realizing most of the problem doesnt come from external circumtances but rather their own repeated self-sabotage",
-      "antibodies"
+      "Bursa Copulatrix"
     ],
     correctAnswer: 'd'
   },
@@ -283,16 +283,16 @@ export const questions = [
     question:  "29) Goomba gets salty at any criticism throwed at him, and never admit he is wrong about everything, by always listening to his ego. in years, how long Goomba will lose all of his friend with that type of behaviour?",
     options: [
       "immediately",
-      "immediately",
-      "immediately",
-      "immediately"
+      "7 minute and 3 tiktoks video",
+      "in a Fat-Tailed Dwarf Lemur hibernating pace",
+      "1 hour 40cents"
     ],
     correctAnswer: 'd'
   },
   {
     question:  "30) This month Denji has suffered a death in the family, a breakup, and several other crises, Predict his remaining resistance before Denji completely losing it, when Luigi ask him: ",
     options: [
-      "\"Hey you look sad, have you tried going for a jog ?\"",
+      "\"Hey you look sad, have you try going for a jog ?\"",
       "\"Have you try Keto diet ?\"",
       "\"Have you try to smile ?\"",
       "\"HAVE YOU TRIED NOT BEING SAD\""
@@ -303,18 +303,18 @@ export const questions = [
     question:  "31)  A can of beans refers to a sealed metal container (can) that holds beans, which have usually been cooked and preserved. it isnt sentient it doesnt have conciousness nor feeling, but it also doesnt suffer from experiencing neither trauma, depression, anxiety, shame nor the feeling of emptiness which turn to be destructive leading to seeking validation through so called love from someone you just met. therefore would you rather live as:",
     options: [
       "A can of beans",
-      "A can of beans",
-      "A can of beans",
-      "A can of beans"
+      "A can",
+      "A cant",
+      "A can of screw you!"
     ],
     correctAnswer: 'd'
   },
   {
     question:  "32) Feeling not contributing anything to the society Aki started questioning his own existence, for dirt has more contribution by giving creature place to stand, grow and live. which one are better between them according to Aki?",
     options: [
-      "",
-      "",
-      "",
+      "fire",
+      "water",
+      "air",
       "dirt"
     ],
     correctAnswer: 'd'
@@ -322,9 +322,9 @@ export const questions = [
   {
     question:  "33) \"there are two me, which me is ME now?, one of them guides me, the other try to kill me, i dont have personality, i dont need personality,  _______________\" Based on the sentence provided, fill the empty line : ",
     options: [
-      "",
-      "",
-      "",
+      "\"my name jeff\"",
+      "\"i am batman\"",
+      "\"Baby gronk\"",
       "\"You make me who i am\""
     ],
     correctAnswer: 'd'
@@ -586,6 +586,36 @@ export const questions = [
       "sup",
       "no im not into butt stuff sorry",
       "i ummmm cant speak spanish i uhhhh no hablo ingles, no hablo espanol, not even one hablo sir!"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "60) What is your favorite racial slurs?",
+    options: [
+      "\"the other one\"",
+      "im not racist but...",
+      "i have one, but its universally unoffensive",
+      "cant be racist to myself"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "61) how does it feel to be a racist?",
+    options: [
+      "cool",
+      "fun",
+      "exciting",
+      "intriguing"
+    ],
+    correctAnswer: 'd'
+  },
+  {
+    question:  "62) ",
+    options: [
+      "cool",
+      "fun",
+      "exciting",
+      "intriguing"
     ],
     correctAnswer: 'd'
   },
