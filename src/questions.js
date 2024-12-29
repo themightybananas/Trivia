@@ -5,7 +5,7 @@ export const questions = [
       "Helsinki",
       "Warsaw",
       "Paris",
-      "Sir James Putty, 36 Petersburg Valley, London W4-OPL"
+      "Sir James Putty, 36 Petersburg Valley, London W4-OPL 6th Avenue"
     ],
     correctAnswer: 'c'
   },
@@ -43,9 +43,9 @@ export const questions = [
     question:  "5) how many fingers am i holding up?",
     options: [
       "3",
-      "three",
-      "about 3?",
-      "3%"
+      "12 and a half",
+      "6",
+      "46%"
     ],
     correctAnswer: 'd'
   },
@@ -54,7 +54,7 @@ export const questions = [
     options: [
       "3",
       "2",
-      "1",
+      "7",
       "46"
     ],
     correctAnswer: 'd'
@@ -90,7 +90,7 @@ export const questions = [
     correctAnswer: 'a'
   },
   {
-    question:  "10) well me, personally! i dont think you find the repetitive questions too repetitive",
+    question:  "10) well me, personally i dont think you find the repetitive questions too repetitive",
     options: [
       "i hate you",
       "th",
@@ -160,12 +160,12 @@ export const questions = [
     correctAnswer: 'b'
   },
   {
-    question:  "17) the writer of the question havent come up with the solution to solve world and hunger while managing to keep the question short and funny!",
+    question:  "17) What is the greatest political act to annex a hostile teritorry, using influence, diplomacy, and charm?",
     options: [
-      "yeah",
-      "okay",
-      "i mean yeah you do you, man",
-      "life what is life"
+      "anyway how was your day?",
+      "send an envoy to influence the goverment to support my cause",
+      "flirt their leader using baquettes of roses and chocolate",
+      "offer them a deal they cant refuse using 4 paperclip and a magenta crayon"
     ],
     correctAnswer: 'a'
   },
@@ -244,7 +244,7 @@ export const questions = [
     options: [
       "\"accidently\" sneeze then proceed to \"accidently\" knock over the chess board",
       "RUN AWAY!",
-      "accept the defeat and be a loser like youre, yeah you disgusting scum",
+      "accept the defeat and be a loser like youre, yeah you disgusting sludge",
       "be angry"
     ],
     correctAnswer: 'd'
@@ -265,7 +265,7 @@ export const questions = [
       "Hahaha thats my funny man",
       "mynd yu moose bite kan be nasti",
       "Bryan we are getting a divorce",
-      "under the liver"
+      "big laugh"
     ],
     correctAnswer: 'd'
   },
@@ -285,7 +285,7 @@ export const questions = [
       "immediately",
       "7 minute and 3 tiktoks video",
       "in a Fat-Tailed Dwarf Lemur hibernating pace",
-      "1 hour 40cents"
+      "1 hour and 40cents"
     ],
     correctAnswer: 'd'
   },
@@ -312,9 +312,9 @@ export const questions = [
   {
     question:  "32) Feeling not contributing anything to the society Aki started questioning his own existence, for dirt has more contribution by giving creature place to stand, grow and live. which one are better between them according to Aki?",
     options: [
-      "fire",
-      "water",
-      "air",
+      "magnetic sand",
+      "USB Adapter",
+      "16GB flash drive",
       "dirt"
     ],
     correctAnswer: 'd'
@@ -353,7 +353,7 @@ export const questions = [
     question:  "36) Who was Adam's Wife?",
     options: [
       "Eve",
-      "Hawa",
+      "counsins of mine",
       "A woman named Jessica from Brighton",
       "the first girl i felt up in kindergarten"
     ],
@@ -565,7 +565,7 @@ export const questions = [
       "the one that fit snugly",
       "designed to lift, hold and separate",
       "boneless",
-      "Attractive, young and cupcake as the desert"
+      "flexible and cupcake as the desert"
     ],
     correctAnswer: 'd'
   },
@@ -575,7 +575,7 @@ export const questions = [
       "not really, theyre just a bunch of overhyped, overrated, over everything",
       "yes it was quite a delicacy",
       "i wont tell you, its quite private",
-      "7/10 couldve done it in tuesday"
+      "7/19 couldve done it in tuesday"
     ],
     correctAnswer: 'd'
   },
@@ -585,7 +585,7 @@ export const questions = [
       "hi",
       "sup",
       "no im not into butt stuff sorry",
-      "i ummmm cant speak spanish i uhhhh no hablo ingles, no hablo espanol, not even one hablo sir!"
+      "i cant speak spanish sir, i no hablo ingles, no hablo espanol, not even one hablo"
     ],
     correctAnswer: 'd'
   },
@@ -605,17 +605,7 @@ export const questions = [
       "cool",
       "fun",
       "exciting",
-      "intriguing"
-    ],
-    correctAnswer: 'd'
-  },
-  {
-    question:  "62) ",
-    options: [
-      "cool",
-      "fun",
-      "exciting",
-      "intriguing"
+      "extraordinary"
     ],
     correctAnswer: 'd'
   },
